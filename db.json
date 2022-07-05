@@ -1,0 +1,44 @@
+{
+    "employees":[
+        {
+            "id": 1,
+            "name": "Michael Scott",
+            "title": "Regional Manager",
+            "bio": "Michael is the regional manager of Dunder Mifflin Paper Company in Scranton, Pennsylvania. Michael thinks of himself as an extremely capable boss who can handle any problem efficiently. In reality, Scott is ill-equipped to handle most of the problems that arise at Dunder Mifflin. Michael loves to host conference room meetings where typically very little is accomplished but he gets to be the center of attention.",
+            "image": "https://static.wikia.nocookie.net/theoffice/images/b/be/Character_-_MichaelScott.PNG/revision/latest?cb=20200413224550",
+            "quote": "That's what she said!"
+        },
+        {
+            "id": 2,
+            "name": "Dwight Schrute",
+            "title": "Assistant to the Regional Manager",
+            "bio":"Dwight is one of the highest ranked and most successful salesmen at Dunder Mifflin, despite lacking in social skills and common sense. He has a rivalry with fellow salesman Jim Halpert. He frequently serves a second in command position as Assistant (to the) Regional Manager, but is offered the role as manager in the final season.",
+            "image": "https://static.wikia.nocookie.net/characters/images/c/cd/Dwight_Schrute.jpg/revision/latest/scale-to-width-down/350?cb=20151122222930",
+            "quote": "Today, smoking is going to save lives."
+        },
+        {
+            "id": 3,
+            "name": "Robert California",
+            "title": "CEO",
+            "bio": "Robert California is the former CEO of Dunder Mifflin/Sabre. An enigmatic individual, he was often inspiring and intimidating to the staff in the Scranton branch office, especially so to Regional Manager Andy Bernard. Robert greatly enjoy Hidetoshi Hasagawa's 'Coconut Penis' flavored energy drink and once remarked that it was 'better before they added this coconut crap' to the drink.",
+            "image": "https://static.wikia.nocookie.net/theoffice/images/2/24/Robert_California_1.jpg/revision/latest/scale-to-width-down/333?cb=20120910012807",
+            "quote": "Do I look like someone who would waste my own time?"
+        },
+        {
+            "id": 4,
+            "name": "Creed Bratton",
+            "title": "Quality Assurance Manager",
+            "bio": "Creed Bratton is a deviant, former hippie and homeless man employed at the Scranton branch of paper distributor Dunder Mifflin as a quality assurance manager. Creed is a mysterious figure who is prone to making bizarre or confusing statements on a regular basis.",
+            "image": "https://static.wikia.nocookie.net/theoffice/images/2/20/2009Creed.jpg/revision/latest/scale-to-width-down/350?cb=20170701085348",
+            "quote": "I Already Won The Lottery, I Was Born In The U-S Of A, Baby."
+        },
+        {
+            "id": 5,
+            "name": "Kelly Kapoor",
+            "title": "Customer Service Representative",
+            "bio": "Kelly is a talkative customer service representative at Dunder Mifflin Scarnton, and is a known chatterbox. She frequently talks about things teenage girls might discuss, such as boys, dating, and celebrity gossip. She says that she wants to get married, and can't wait to 'get pregnant and have babies'.",
+            "image": "https://static.wikia.nocookie.net/theoffice/images/6/69/Kelly_Kapoor.jpg/revision/latest/scale-to-width-down/350?cb=20170701090501",
+            "quote": "I talk a lot, so I've learned to just tune myself out."
+        }
+    ]
+}

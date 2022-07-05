@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+# The Office
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Michael Scott needs our help! Jo Bennett tasked Michael with putting together a website to feature all of Dunder Mifflin's employees, but when Michael made a joke about the IT guy's mother, he decided he wasn't going to finish the project. Michael would do it himself, but he ate a whole pot pie and passed out. It is up to you to finish building the React application!
 
-## Available Scripts
+## Setup
 
-In the project directory, you can run:
+1. Run `npm install` in your temrinal
+2. Run `npm run server`. This will run your backend on port `8003`.
+3. In a new terminal, run `npm start`. This will run your React app on port `8000`.
 
-### `npm start`
+In our React app, the data about the office employees is in the `db.json` file. This file will mimic and API that follows RESTful conventions.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Make sure to open [http://localhost:8003/employees](http://localhost:8003/employees) in the browser to verify your backend is working before you proceed!
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## What You Already Have
 
-### `npm test`
+The `App` component holds two children: `SearchBar` and `EmployeesContainer`. The `EmployeesContainer` will render all `Employee` components.
+All of the code to style the page has been written for you, meaning that you should be adding to the code rather than editing it; however, if your finished product has some styling issues, don't worry too much about it.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Core Deliverables
 
-### `npm run build`
+As a user, I should be able to:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- See a list of employees on the page, using the `Employee` Component. The `Employee` component should display the employee's image, name, job title, and bio.
+- Click on the image of the employee in the `Employee` component and see the quote for that employee in place of the bio. If the user clicks on the image again the quote should be replaced with the bio. If a user clicks on another employee's image, it toggles that employee's bio indpendent of any other employee's.
+- Type in the `SearchBar` component and see a list of employees whose name or job title match the text in the search bar. If there's no text in the search bar, all employees should be rendered.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Endpoints for Core Deliverables
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### GET /employees
 
-### `npm run eject`
+Example Response:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```json
+[
+  {
+    "id": 1,
+    "name": "Michael Scott",
+    "title": "Regional Manager",
+    "bio": "Michael is the regional manager of Dunder Mifflin Paper Company in Scranton, Pennsylvania. Michael thinks of himself as an extremely capable boss who can handle any problem efficiently. In reality, Scott is ill-equipped to handle most of the problems that arise at Dunder Mifflin. Michael loves to host conference room meetings where typically very little is accomplished but he gets to be the center of attention.",
+    "image": "https://static.wikia.nocookie.net/theoffice/images/b/be/Character_-_MichaelScott.PNG/revision/latest?cb=20200413224550",
+    "quote": "That's what she said!"
+  },
+  {
+    "id": 2,
+    "name": "Dwight Schrute",
+    "title": "Assistant to the Regional Manager",
+    "bio": "Dwight is one of the highest ranked and most successful salesmen at Dunder Mifflin, despite lacking in social skills and common sense. He has a rivalry with fellow salesman Jim Halpert. He frequently serves a second in command position as Assistant (to the) Regional Manager, but is offered the role as manager in the final season.",
+    "image": "https://static.wikia.nocookie.net/characters/images/c/cd/Dwight_Schrute.jpg/revision/latest/scale-to-width-down/350?cb=20151122222930",
+    "quote": "Today, smoking is going to save lives."
+  }
+]
+```
