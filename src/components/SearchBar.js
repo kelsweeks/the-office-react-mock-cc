@@ -1,7 +1,12 @@
-function SearchBar() {
+function SearchBar({ search, setSearch }) {
   return (
     <div className="search">
-      <input type="text" className="searchTerm" />
+      <input
+        type="text"
+        className="searchTerm"
+        onChange={(event) => setSearch(event.target.value)}
+        value={search}
+      />
     </div>
   );
 }

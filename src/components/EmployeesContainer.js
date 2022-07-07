@@ -1,11 +1,10 @@
 import Employee from "./Employee";
 
-function EmployeesContainer() {
-  return (
-    <ul className="cards">
-      {/* render a list of <Employee> components in here */}
-    </ul>
-  );
+function EmployeesContainer({ employees }) {
+  const renderEmployees = employees.map((employee) => (
+    <Employee employee={employee} />
+  ));
+  return <ul className="cards">{renderEmployees}</ul>;
 }
 
 export default EmployeesContainer;
